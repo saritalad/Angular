@@ -1,0 +1,17 @@
+www.nodejs.org
+1  download and install
+c:\>node -v 
+o/p 16.0
+2 c:\>npm install -g npm@9.8.0
+c:\>npm -v
+9.8.0
+3 c:\>npm install -g @angular/cli
+4 c:\>ng --help
+5 New Angular Application can be creted now 
+6 Change folder for new Angular Project 
+d:\>
+D:\>mkdir angular23
+cd angular23 
+d:\anguar23\> ng new myproject 
+
+c:\> npm install -g typescript

@@ -1,0 +1,2 @@
+imageUrl:'/assets/images/p4.jpg
+<img src={{user.imageUrl|image}} width="100px" height="100px" alt="{{user.firstname}}"> 

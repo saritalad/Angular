@@ -1,0 +1,7 @@
+npm uninstall -g @angular/cli
+npm cache clean
+npm cache verify
+npm install -g @angular/cli@version [version can be 15 or 16]
+ng new yourAppName
+================
+https://nodejs.org/dist/v16.16.0/node-v16.16.0-x64.msi

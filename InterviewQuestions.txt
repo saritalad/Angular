@@ -1,0 +1,10 @@
+1 diff bet property binding and interpolation
+Ans: button disable property is assignedto property 
+string interpolation always transforms data to a string
+so the button will be always disabled,whether the value is true or false.
+when do not use Property binding ex: comment TextBox : Hacker may enter javascript code 
+u should use string interpolation only for input type text
+2 diff bet constructor and NgOnInit hook
+both fired at the beginning of component life cycle
+i constructor is a feature of typscript class and not Angular
+

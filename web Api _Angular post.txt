@@ -1,0 +1,19 @@
+ onSubmit()
+  {
+    this.custservice.addcustomer(this.newCust)
+      .subscribe(
+        response => {
+          console.log(response);
+alert("You have registered successfully")
+        },
+        error => {
+          console.log(error);
+        },
+      );
+  }
+======================
+ addcustomer(Icustomer: Icustomer): Observable<Icustomer> {
+
+    return this.http.post<Icustomer>(this.url1, Icustomer);
+
+  }

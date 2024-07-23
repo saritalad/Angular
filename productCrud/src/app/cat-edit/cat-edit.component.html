@@ -1,0 +1,22 @@
+<h1> Edit Category</h1>
+<form #categoryform="ngForm" novalidate (ngSubmit)="onSubmit(currentobj)">
+    <div>
+        <h1>Edit Product</h1>
+        <pre></pre>
+        <div class="form-group">
+            <label for="id">Category Id</label><br>
+            <input #id="ngModel" type="number" readonly name="catid" class="form-control"
+                [(ngModel)]="currentobj.catId">
+        </div>
+        <div class="form-group">
+            <label for="catname">category name</label><br>
+            <input #catname="ngModel" required minlength="2" maxlength="30" type="text" name="catname"
+                class="form-control" [(ngModel)]="currentobj.catname">
+            <p *ngIf="catname.hasError('required')"> category name is required</p>
+            <p *ngIf="catname.hasError('minlength')">max length should be 30</p>
+        </div>
+        <div class="form-group">
+            <input type="submit" value="Submit" [disabled]="!categoryform.valid">
+        </div>
+    </div>
+</form>

@@ -1,0 +1,6 @@
+npm install -g typescript
+
+Set-ExecutionPolicy -Scope CurrentUser -ExecutionPolicy RemoteSigned
+
+tsc filename.ts to build 
+node filename.js  to run

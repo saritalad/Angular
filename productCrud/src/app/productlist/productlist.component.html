@@ -1,0 +1,19 @@
+<p>productlist works!</p>
+<table class="table table-stripped table-hover">
+    <thead class="thead-light">
+      <tr>
+        <th scope="col">id</th>
+        <th scope="col">Productname</th>
+           
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let p of prodlist">
+        <td>{{p.productId}}</td>
+        <td>{{p.productname}}</td>
+        <td>{{p.price}}</td>
+        <td><a routerLink="/details/{{p.productId}}">Details</a></td>
+        <td><a routerLink="/edit/{{p.productId}}">Edit</a></td>         
+      </tr>
+          </tbody>
+  </table>
